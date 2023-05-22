@@ -36,7 +36,7 @@ window.onload = function () {
         const product = JSON.parse(atob(productBase64));
 
         if (typeof product === 'object' && product['Unique Number']) {
-            const isProductExist = wishlist.findIndex((item) => item.id === product['Unique Number']);
+            const isProductExist = wishlist.findIndex((item) => item['Unique Number'] === product['Unique Number']);
             // if doesn't exist
             if (isProductExist === -1) {
                 wishlist = [product, ...wishlist];
