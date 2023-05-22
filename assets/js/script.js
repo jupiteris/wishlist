@@ -49,7 +49,7 @@ window.onload = function () {
 }
 
 function handleRemove(id) {
-    wishlist = wishlist.filter(item => item.id !== id);
+    wishlist = wishlist.filter(item => item['Unique Number'] !== id);
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
     renderWishlist();
 }
