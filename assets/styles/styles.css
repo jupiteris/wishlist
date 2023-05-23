@@ -14,7 +14,7 @@
 /* tag style */
 html {
     background: gray;
-    font-family: "CircularStd";
+    font-family: sans-serif;
 }
 
 body {
@@ -53,6 +53,10 @@ h1,
 h4 {
     margin: 0;
     color: var(--primary-color);
+}
+
+h1 {
+    font-family: "CircularStd", sans-serif;
 }
 
 h4 {
