@@ -62,7 +62,7 @@ function renderWishlist() {
         grid.innerHTML += `<div class="item">
             <img src="assets/imgs/${product['Image Name']}" alt="${product['Product Name']}" />
             <h5>${product['Product Name']}</h5>
-            <h5>${Euro.format(product['Price EU'])}</h5>
+            <h5>€${product['Price EU']}</h5>
             <div class="x-btn" onClick='handleRemove(${product['Unique Number']})'>
                 <i class="fa fa-times"></i>
             </div>
