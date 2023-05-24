@@ -60,12 +60,10 @@ function renderWishlist() {
 
     wishlist.forEach((product) => {
         grid.innerHTML += `<div class="item">
-            <img src="assets/imgs/${product['Image Name']}" alt="${product['Product Name']}" />
+            <img src="assets/imgs/${product['Image Name']}" alt="${product['Product Name']}" class="product-img"/>
             <h5>${product['Product Name']}</h5>
             <h5>€${product['Price EU']}</h5>
-            <div class="x-btn" onClick='handleRemove(${product['Unique Number']})'>
-                <i class="fa fa-times"></i>
-            </div>
+            <img class="x-btn" src="assets/imgs/Close.png" alt="x" onClick='handleRemove(${product['Unique Number']})'/>
         </div>`
     });
 }

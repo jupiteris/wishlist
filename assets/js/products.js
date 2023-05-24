@@ -370,5 +370,12 @@ const Products = [
     "Price": 83,
     "Price EU": 90,
     "Image Name": "Alegra_Canvas_Leather_Slide_Sandal.png",
+  },
+  {
+    "Unique Number": 100054,
+    "Product Name": "Straw Large Andie Drawstring Bag",
+    "Price": 233,
+    "Price EU": 244,
+    "Image Name": "Straw_Large_Andie_Drawstring_Bag.png",
   }
 ]
