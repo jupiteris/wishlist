@@ -8,7 +8,8 @@
 @font-face {
     font-family: "CircularStd";
     src: url("../fonts/FeniceITCbyBT-Regular.otf") format("opentype"),
-        url("../fonts/SackersGothicStd-Medium.otf") format("opentype");
+        url("../fonts/SackersGothicStd-Medium.otf") format("opentype"),
+        url("../fonts/FoundersGrotesk-Regular.otf") format("opentype");
 }
 
 /* tag style */
@@ -31,17 +32,27 @@ header,
 footer {
     background: var(--primary-color);
     color: white;
-    justify-content: center;
-    display: flex;
     font-weight: 400;
 }
 
 header {
-    height: 40px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+}
+
+header a {
     text-transform: uppercase;
-    letter-spacing: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a.selected {
     border-bottom: 3px solid var(--second-color);
+    margin-bottom: -3px;
 }
 
 main {
@@ -51,10 +62,11 @@ main {
 }
 
 footer {
-    height: unset;
-    padding: 20px;
-    border-top: 3px solid var(--second-color);
+    display: flex;
+    justify-content: center;
     text-align: center;
+    padding: 12px;
+    border-top: 3px solid var(--second-color);
 }
 
 h1,
@@ -108,8 +120,22 @@ h4 {
     opacity: 1;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     main {
         padding: 16px 24px;
     }
+
+    header,
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    header,
+    footer {
+        font-size: 11px;
+    }
+
 }
